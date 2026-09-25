@@ -1,0 +1,315 @@
+/* =========================================================
+   VARIÁVEIS GLOBAIS
+   ========================================================= */
+/* Paleta de cores do projeto */
+
+:root {
+    --cor-marca: #392620;
+    --cor-fundo: #f6f1ea;
+    --cor-texto: #2c1e18;
+    --cor-lendo: #7a4632;
+    --cor-concluido: #5b6b4f;
+    --cor-queroler: #a89a8c;
+    --cor-destaque: #993854;
+}
+
+/* =========================================================
+   BASE / TIPOGRAFIA
+   ========================================================= */
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Inter', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand {
+    font-family: 'Lora', serif;
+}
+
+/* =========================================================
+   NAVBAR
+   ========================================================= */
+
+.navbar-marca {
+    background-color: var(--cor-marca);
+}
+
+/* Links dentro da navbar (fundo escuro) */
+.navbar-marca .nav-link {
+    color: #e9ded4;
+}
+
+.navbar-marca .nav-link:hover,
+.navbar-marca .nav-link.active {
+    color: #f6f1ea;
+    font-weight: 600;
+}
+
+/* =========================================================
+   CARDS
+   ========================================================= */
+
+.card-custom {
+    border: none;
+    border-radius: 14px;
+    background-color: #faf9f5;
+    border-top: 6px solid #6c757d;
+}
+
+.card-livro {
+    border: none;
+    border-radius: 14px;
+    background-color: #faf9f5;
+    border-top: 6px solid #6c757d;
+    padding: 20px;
+    height: 100%;
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.card-livro:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12) !important;
+}
+
+.capa-livro {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    background-color: #faf9f5;
+}
+
+/* =========================================================
+   CORES DE STATUS (aplicadas em capa, borda do card e badge)
+   ========================================================= */
+
+.capa-livro.cor-lendo {
+    background-color: #e6f2fa;
+    color: var(--cor-lendo);
+}
+
+.capa-livro.cor-concluido {
+    background-color: #e7f4ee;
+    color: var(--cor-concluido);
+}
+
+.capa-livro.cor-queroler {
+    background-color: #f4f4f4;
+    color: #999999;
+    border-bottom: 1px solid #d0d0d0;
+}
+
+.card-livro.cor-lendo {
+    border-top-color: var(--cor-lendo);
+}
+
+.card-livro.cor-concluido {
+    border-top-color: var(--cor-concluido);
+}
+
+.card-livro.cor-queroler {
+    border-top-color: var(--cor-queroler);
+}
+
+.badge-status {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+.badge-status.cor-lendo {
+    background-color: #7a4632;
+    color: white;
+}
+
+.badge-status.cor-concluido {
+    background-color: #5b6b4f;
+    color: white;
+}
+
+.badge-status.cor-queroler {
+    background-color: #a89a8c;
+    color: white;
+}
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
+
+/* Botões de ação nos cards, estilo contorno */
+.btn-editar {
+    background-color: transparent;
+    border: 1.5px solid var(--cor-marca);
+    color: var(--cor-marca);
+    font-weight: 500;
+}
+
+.btn-editar:hover {
+    background-color: var(--cor-marca);
+    color: #f6f1ea;
+}
+
+.btn-apagar {
+    background-color: transparent;
+    border: 1.5px solid #dc3545;
+    color: #dc3545;
+    font-weight: 500;
+}
+
+.btn-apagar:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+/* Filtro selecionado na tela de listagem */
+.btn-filter.active {
+    background-color: var(--cor-marca) !important;
+    border-color: var(--cor-marca) !important;
+    color: #f6f1ea !important;
+}
+
+.btn-filter:hover:not(.active) {
+    background-color: #f0eae0;
+    border-color: var(--cor-marca);
+    color: var(--cor-marca);
+}
+
+/* Botão principal do formulário (Salvar) */
+.btn-dark {
+    background-color: var(--cor-destaque) !important;
+    border-color: var(--cor-destaque) !important;
+}
+
+.btn-dark:hover {
+    background-color: #7a2c42 !important;
+    border-color: #7a2c42 !important;
+}
+
+/* Botão "Cancelar" do formulário (fundo claro) */
+.btn-cancelar {
+    color: var(--cor-marca);
+}
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+.form-control,
+.form-select {
+    border-color: #d8cfc2;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--cor-marca);
+    box-shadow: 0 0 0 0.2rem rgba(57, 38, 32, 0.15);
+}
+
+.divisor-formulario {
+    height: 1px;
+    background-color: #e7ded3;
+    margin: 22px 0;
+    border: none;
+}
+
+/* =========================================================
+   COMPONENTES ESPECÍFICOS
+   ========================================================= */
+
+.card-date-info {
+    font-size: 0.82rem;
+    color: #495057;
+    background-color: #f1f0ea;
+    padding: 4px 8px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.texto-anotacao {
+    font-size: 0.88rem;
+    color: #555;
+    background-color: #f4f2eb;
+    border-left: 3px solid #dee2e6;
+    padding: 6px 10px;
+    border-radius: 0 6px 6px 0;
+    max-height: 100px;
+    overflow-y: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    white-space: pre-wrap;
+    /* respeita quebras de linha e espaços do textarea, para não permitir que as anotações fiquem todas juntas */
+}
+
+.barra-progresso-fundo {
+    background-color: #e0e0e0;
+    border-radius: 999px;
+    height: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.barra-progresso-preenchimento {
+    background-color: var(--cor-lendo);
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.3s ease;
+}
+
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2.2rem;
+    color: #dedede;
+    cursor: pointer;
+    transition: color 0.15s ease;
+    padding: 0 2px;
+}
+
+.star-rating input:checked~label,
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: #5b6b4f;
+}
+
+.stars-display {
+    color: #5b6b4f;
+    font-size: 1.1rem;
+}
+
+.stars-empty {
+    color: #ccc;
+}
+
+/* =========================================================
+   GOOGLE BOOKS (lista de sugestões do autocomplete)
+   ========================================================= */
+
+#sugestoes-google {
+    max-height: 220px;
+    overflow-y: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#sugestoes-google img {
+    border-radius: 2px;
+}
