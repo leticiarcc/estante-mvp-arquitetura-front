@@ -10,8 +10,6 @@ A arquitetura acima baseia-se no cenário 1.1, existindo uma interface (front-en
 
 ---
 
----
-
 ## Tecnologias utilizadas   
 - **HTML5** — estrutura semântica da aplicação
 - **CSS3** — estilização personalizada da interface
