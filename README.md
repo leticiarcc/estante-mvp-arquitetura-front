@@ -44,6 +44,37 @@ cd <nome-da-pasta-do-projeto>
 ### 2. Verifique a estrutura de arquivos
 
 O frontend fica na pasta `app_front/`, na raiz do projeto (ao lado de `app_api/`):
+## Instalação e configuração do ambiente
+
+### 1. Clone o repositório
+
+```bash
+git clone <url-do-repositorio>
+cd <nome-da-pasta-do-projeto>
+```
+
+### 2. Verifique a estrutura de arquivos
+
+O frontend fica na pasta `app_front/`, na raiz do projeto (ao lado de `app_api/`):
+```
+├── app_api/ # Backend (Flask)
+└── app_front/
+├── index.html # Estrutura e telas da aplicação
+├── app.js # Lógica, navegação e comunicação com a API
+├── style.css # Estilos personalizados da interface
+├── Dockerfile # Imagem do front-end (Nginx)
+└── README.md # Este arquivo
+```
+
+---
+
+## Como executar o projeto
+
+### Opção 1 — Direto no navegador (sem Docker)
+
+Basta abrir o arquivo `app_front/index.html` diretamente no navegador com **duplo clique**. Nenhum servidor, extensão ou configuração adicional é necessária.
+
+### Opção 2 — Via Docker
 
 ├── app_api/ # Backend (Flask)
 └── app_front/
