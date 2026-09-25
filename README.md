@@ -6,8 +6,6 @@ Frontend da aplicação **Estante Virtual**, desenvolvido para a disciplina *Arq
 
 ![Arquitetura do projeto Estante Virtual](mvparqv2.png)
 
----
-
 A arquitetura acima baseia-se no cenário 1.1, existindo uma interface (front-end) e uma API (back-end) se comunicando com o serviço externo para resgate de informações dos livros, inicialmente buscados por títulos.
 
 ---
