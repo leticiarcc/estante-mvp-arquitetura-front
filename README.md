@@ -44,18 +44,7 @@ cd <nome-da-pasta-do-projeto>
 ### 2. Verifique a estrutura de arquivos
 
 O frontend fica na pasta `app_front/`, na raiz do projeto (ao lado de `app_api/`):
-## Instalação e configuração do ambiente
 
-### 1. Clone o repositório
-
-```bash
-git clone <url-do-repositorio>
-cd <nome-da-pasta-do-projeto>
-```
-
-### 2. Verifique a estrutura de arquivos
-
-O frontend fica na pasta `app_front/`, na raiz do projeto (ao lado de `app_api/`):
 ```
 ├── app_api/ # Backend (Flask)
 └── app_front/
