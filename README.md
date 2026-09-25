@@ -76,25 +76,6 @@ Basta abrir o arquivo `app_front/index.html` diretamente no navegador com **dupl
 
 ### Opção 2 — Via Docker
 
-├── app_api/ # Backend (Flask)
-└── app_front/
-├── index.html # Estrutura e telas da aplicação
-├── app.js # Lógica, navegação e comunicação com a API
-├── style.css # Estilos personalizados da interface
-├── Dockerfile # Imagem do front-end (Nginx)
-└── README.md # Este arquivo
-
-
----
-
-## Como executar o projeto
-
-### Opção 1 — Direto no navegador (sem Docker)
-
-Basta abrir o arquivo `app_front/index.html` diretamente no navegador com **duplo clique**. Nenhum servidor, extensão ou configuração adicional é necessária.
-
-### Opção 2 — Via Docker
-
 Com o [Docker Desktop](https://www.docker.com/products/docker-desktop/) instalado e em execução, na raiz do projeto:
 
 ```bash
