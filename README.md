@@ -4,7 +4,7 @@ Frontend da aplicação **Estante Virtual**, desenvolvido para a disciplina *Arq
 
 ## Arquitetura
 
-![Arquitetura do projeto Estante Virtual](docs/mvparqv2.png)
+![Arquitetura do projeto Estante Virtual](mvparqv2.png)
 
 ---
 
