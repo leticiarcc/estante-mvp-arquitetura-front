@@ -2,10 +2,11 @@
 
 Frontend da aplicação **Estante Virtual**, desenvolvido para a disciplina *Arquitetura de Software*. Esta interface permite ao usuário **cadastrar, visualizar, editar e remover livros** da sua estante pessoal, com **auto-preenchimento via busca no Google Books**, além de acompanhar **estatísticas de leitura** por meio de gráficos.
 
-## Arquitetura
+## Arquitetura da aplicação
 
 ![Arquitetura do projeto Estante Virtual](mvparqv2.png)
 
+A arquitetura acima baseia-se no cenário 1.1, existindo uma interface (front-end) e uma API (back-end) se comunicando com o serviço externo para resgate de informações dos livros, inicialmente buscados por títulos.
 ---
 
 ## Tecnologias utilizadas   
